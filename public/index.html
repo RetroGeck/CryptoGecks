@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
 body{
 
@@ -99,6 +100,7 @@ body{
   width:90%;
 }
 
+
 .main-timeline{ font-family: 'Concert One', sans-serif; }
 .main-timeline:after{
     content: '';
@@ -165,6 +167,20 @@ body{
 .main-timeline .timeline:nth-child(even) .timeline-icon{
     right: auto;
     left: -45px;
+}
+
+.social{
+  color:#fafafa;
+  font-size: 5em;
+  margin:7%;
+}
+
+.social:hover{ text-decoration: none; animation: colors 0.6s infinite steps(1);}
+@keyframes colors{
+    0%{ color: #93ff09; }
+    33%{ color: #f5d714; }
+    66%{ color: #612de9; }
+    100%{ color: #000; }
 }
 
 @media screen and (max-width:576px){
@@ -309,7 +325,6 @@ body{
                               Start Community<br>
                               Develop Website<br>
                               Create Instagram<br>
-                              Create Reddit <br>
                               Create Twitter
                             </h3>
                         </div>
@@ -390,6 +405,14 @@ body{
            <div class="box text-center">
                <img src="./images/CG_4.jpg" alt="Crypto Gecks Example #4">
           </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class= "row justify-content-center">
+              <a href="https://discord.gg/VXkAcVg4" class="social"><i class="fab fa-discord"></i></a>
+              <a href="https://mobile.twitter.com/crypto_gecks" class="social"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/cryptogecks/" class="social"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
