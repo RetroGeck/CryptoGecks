@@ -1,0 +1,36 @@
+
+
+const layerConfigurations = [
+  {
+    growEditionSizeTo: 5,
+    layersOrder: [
+      { name: "Background"},
+      { name: "Eyeball" },
+      { name: "Eye color" },
+      { name: "Rare Iris",
+        options: {
+          displayName: "Iris",
+        },
+      },
+      { name: "Shine" },
+      { name: "Bottom lid" },
+      { name: "Top lid" },
+    ],
+  },
+  {
+    growEditionSizeTo: 25,
+    layersOrder: [
+      { name: "Background"},
+      { name: "Eyeball" },
+      { name: "Eye color" },
+      { name: "Common Iris",
+        options: {
+          displayName: "Iris",
+        },
+      },
+      { name: "Shine" },
+      { name: "Bottom lid" },
+      { name: "Top lid" },
+    ],
+  },
+];
