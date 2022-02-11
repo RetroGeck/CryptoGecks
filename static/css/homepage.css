@@ -26,7 +26,7 @@ body{
 
 #nav {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   width: 100%;
 }
 
@@ -87,7 +87,7 @@ body{
 }
 
 
-.main-timeline{ font-family: 'Concert One', sans-serif; }
+.main-timeline{ font-family: 'Concert One', sans-serif; font-weight: 800;}
 .main-timeline:after{
     content: '';
     display: block;
