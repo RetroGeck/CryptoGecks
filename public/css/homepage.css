@@ -4,6 +4,9 @@
 }
 
 .standalone-header {
+  max-width: 50%;
+}
+.standalone-header h1 {
   font-size: 10em;
   color: black;
 }
@@ -193,6 +196,11 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .timeline-content > .inner-content > h3 {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
+
   .main-timeline .timeline,
 .main-timeline .timeline:nth-child(even) {
     width: 100%;
@@ -206,6 +214,9 @@
 }
 @media only screen and (max-width: 479px) {
   .standalone-header {
+    max-width: 100%;
+  }
+  .standalone-header h1 {
     font-size: 5em;
   }
 

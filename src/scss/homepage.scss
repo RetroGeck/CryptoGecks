@@ -6,8 +6,11 @@
 }
 
 .standalone-header {
-  font-size: 10em;
-  color: black;
+  max-width: 50%;
+  h1 {
+    font-size: 10em;
+    color: black;
+  }
 }
 .box-header {
   font-weight: 800;
@@ -186,6 +189,12 @@
 }
 
 @media screen and (max-width:576px){
+  // hotfix for bad mobile formatting
+  // todo: more maintainable style
+  .timeline-content > .inner-content > h3 {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
         width: 100%;
@@ -201,7 +210,10 @@
 
 @media only screen and (max-width: 479px) {
   .standalone-header {
-    font-size: 5em;
+    max-width: 100%;
+    h1 {
+      font-size: 5em;
+    }
   }
   .logo {
     width: 100%;
