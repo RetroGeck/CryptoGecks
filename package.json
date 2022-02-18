@@ -1,0 +1,26 @@
+{
+  "name": "CryptoGecks",
+  "version": "0.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "sass --watch src/scss:public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RetroGeck/CryptoGecks.git"
+  },
+  "author": "CryptoGecks Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RetroGeck/CryptoGecks/issues"
+  },
+  "homepage": "https://github.com/RetroGeck/CryptoGecks#readme",
+  "devDependencies": {
+    "sass": "^1.49.8",
+    "sass-loader": "^12.4.0"
+  },
+  "dependencies": {
+    "n": "^8.0.2"
+  }
+}

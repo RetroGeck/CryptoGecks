@@ -2,9 +2,15 @@
 
 ## Getting started with development:
 
-Install nodejs v13. This should come with npm.
+Install Nodejs v16 (see their website for install instructions). This software should come with npm.
 
-Install sass npm package globally:
+Install sass npm package. This is a project dependency for development as defined in `package.json` and should automatically install after running the following command (make sure you are in the project root directory):
+
+```
+npm i
+```
+
+You can also install this module globally for use outside the project:
 ```
 npm i --global sass
 ```
@@ -12,14 +18,18 @@ npm i --global sass
 Dependency Versions:
 | Package | Version |
 | -- | -- |
-| node | 13.7.x |
-| npm | 6.13.x |
+| node | 16.14.x |
+| npm | 8.5.x |
 | sass | 1.49.x |
 
 When editing stylesheets, **modify scss file only**. From the project root directory, watch for changes with the sass module:
-
 ```
 sass --watch src/scss:public/css
+```
+
+This command can be indirectly run using:
+```
+npm run watch-css
 ```
 
 TODO:
