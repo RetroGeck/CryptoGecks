@@ -5,6 +5,14 @@
   height:auto;
 }
 
+.standalone-header {
+  font-size: 10em;
+  color: black;
+}
+.box-header {
+  font-weight: 800;
+}
+
 .menu {
    text-decoration: none;
    color: #fafafa;
@@ -192,6 +200,9 @@
 }
 
 @media only screen and (max-width: 479px) {
+  .standalone-header {
+    font-size: 5em;
+  }
   .logo {
     width: 100%;
   }
