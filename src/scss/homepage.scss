@@ -1,8 +1,11 @@
 
 
-.logo img {
-  width: 50%;
-  height:auto;
+.logo {
+  width: 100%;
+  img {
+    width: 25%;
+    height: auto;
+  }
 }
 
 .standalone-header {
@@ -189,6 +192,9 @@
 }
 
 @media screen and (max-width:576px){
+  .logo img {
+    width: 100%;
+  }
   // hotfix for bad mobile formatting
   // todo: more maintainable style
   .timeline-content > .inner-content > h3 {
