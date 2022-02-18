@@ -26,13 +26,8 @@ When editing stylesheets, **modify scss file only**. From the project root direc
 ```
 sass --watch src/scss:public/css
 ```
-
-This command can be indirectly run using:
-```
-npm run watch-css
-```
+Note: this command can have issues actually watching the file, so you may need to restart it to see changes.
 
 TODO:
 - Do we need css file in two locations? (`static/css` and `public/css`). Ive kept `public/css`
 - Do we need dupe html files? (`layout/index.html`). I've kept `public/index.html`.
-- Check site functionality upon deployment.
