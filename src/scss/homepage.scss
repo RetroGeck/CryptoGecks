@@ -10,7 +10,7 @@
    color: #fafafa;
    font-family: 'Chau Philomene One', sans-serif;
 
-   :hover {
+   &:hover {
     animation: loading 0.6s infinite steps(1);
    }
 }
@@ -88,7 +88,7 @@
 
 .main-timeline {
   font-family: 'Concert One', sans-serif; font-weight: 800;
-  :after {
+  &:after {
     content: '';
     display: block;
     clear: both;
@@ -151,7 +151,7 @@
       margin: 0 0 0 5px;
       float: right;
       .timeline-content {
-        padding: 20px 20px 20px 65px;
+        padding: 20px 20px 20px 65px; // padding unset
       }
       .timeline-icon {
         right: auto;
@@ -164,7 +164,7 @@
   color:#fafafa;
   font-size: 5em;
   margin: 7%;
-  :hover {
+  &:hover {
     text-decoration: none;
     animation: colors 0.6s infinite steps(1);
   }
@@ -184,7 +184,11 @@
         padding: 0 45px 0 0;
         margin: 0 0 30px;
     }
-    .main-timeline .timeline:nth-child(even){ padding: 0 0 0 45px; }
+    .main-timeline .timeline:nth-child(even){
+      padding: 0 0 0 45px;
+      // padding: unset;
+    }
+    // .main-timeline .timeline:nth-child(even) .timeline-content
 }
 
 @media only screen and (max-width: 479px) {
@@ -194,6 +198,9 @@
 
   #nav li {
     font-size: 1em;
+    div {
+      width: 100%;
+    }
   }
 
   .box {
@@ -209,13 +216,16 @@
   .main-timeline {
     .timeline {
       padding: 35px 20px 0 0;
-      :nth-child(even) {
+      &:nth-child(even) {
         padding: 35px 0 0 20px;
         .timeline-icon {
           left: -25px;
         }
         .timeline-content {
-          padding: 55px 15px 20px;
+          // padding: 55px 15px 20px;
+          // padding: unset;
+          // hotfix
+          padding: 20px 65px 20px 20px;
         }
       }
     }
