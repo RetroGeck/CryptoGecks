@@ -9,10 +9,10 @@ const qaList = [
 
 qaList.forEach(qaItem => {
   <div class="inner-content">
-  <h2 class="box-header">{qaItem.question || ''}</h2>
-  <br />
-  <h3 class="Title">
-    {qaItem.answer || ''}
-  </h3>
-</div>
+    <h2 class="box-header">{qaItem.question || ''}</h2>
+    <br />
+    <h3 class="Title">
+      {qaItem.answer || ''}
+    </h3>
+  </div>
 });
